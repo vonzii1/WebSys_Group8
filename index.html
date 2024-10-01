@@ -5,47 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Sharing Platform</title>
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 </head>
 <body>
-    <!-- Header Section with Logo -->
+    <!-- Header Section -->
     <header>
-        <nav>
-            <img src="images/logo.png" alt="Recipe Sharing Logo" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Communities</a></li>
-                <li><a href="#">Create Post</a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">Profile</a></li>
+        <nav class="navbar">
+            <!-- Logo Section -->
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Recipe Sharing Logo" class="logo">
+            </div>
+
+            <!-- Navigation Buttons -->
+            <ul class="nav-buttons">
+                <li><button onclick="window.location.href='index.html'"><i class="fas fa-home"></i> <span>Home</span></button></li>
+                <li><button onclick="window.location.href='communities.html'"><i class="fas fa-users"></i> <span>Communities</span></button></li>
+                <li><button onclick="window.location.href='create-post.html'"><i class="fas fa-plus"></i> <span>Create Post</span></button></li>
+            </ul>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <i class="fas fa-times search-clear"></i>
+            </div>
+
+            <!-- Inbox, Chat, and Profile as Buttons -->
+            <ul class="nav-icons">
+                <li><button onclick="window.location.href='inbox.html'"><i class="fas fa-inbox"></i> <span>Inbox</span></button></li>
+                <li><button onclick="window.location.href='chat.html'"><i class="fas fa-comment-dots"></i> <span>Chat</span></button></li>
+                <li><button onclick="window.location.href='profile.html'"><span class="profile-icon">VC</span></button></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content Section -->
+    <!-- Main Section: Post Feed -->
     <main>
         <section class="post-feed">
-            <!-- Example Post 1 -->
+            <h1><strong><i>Recipe of the Week</strong></em></h1>
+
+            <!-- Example post 1 -->
             <article class="post">
-                <h2>My Binangkal Recipe with love</h2>
-                <img src="images/binangkal.jpg" alt="Binangkal">
-                <p>by Anonymous One</p>
+                <div class="post-header">
+                    <div class="user-avatar">
+                        <div class="avatar">A1</div>
+                    </div>
+                    <div class="user-info">
+                        <h3>Anonymous One</h3>
+                        <p>Delicious Spaghetti Carbonara... <a href="#">see more...</a></p>
+                    </div>
+                </div>
+
+                <div class="post-images">
+                    <img src="images/spaghetti.jpg" alt="Spaghetti Image">
+                    <img src="images/spaghetti2.jpg" alt="Spaghetti Image 2">
+                    <img src="images/spaghetti3.jpg" alt="Spaghetti Image 3">
+                </div>
+
                 <div class="post-actions">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <button>Share</button>
+                    <div class="likes-comments">
+                        <button class="action-btn like-btn"><i class="fas fa-thumbs-up"></i> 123k</button>
+                        <button class="action-btn unlike-btn"><i class="fas fa-thumbs-down"></i> 1k</button>
+                        <button class="action-btn comment-btn"><i class="fas fa-comment"></i> 23.5k</button>
+                    </div>
+                    <div class="other-actions">
+                        <button class="action-btn favorite-btn"><i class="fas fa-heart"></i> Add to Favorite</button>
+                        <button class="action-btn report-btn"><i class="fas fa-flag"></i> Report</button>
+                    </div>
                 </div>
             </article>
 
-            <!-- Example Post 2 -->
+            <!-- Example post 2 -->
             <article class="post">
-                <h2>Pinakbet ni Sir Chief</h2>
-                <img src="images/pinakbet.jpg" alt="Pinakbet">
-                <p>by Anonymous Two</p>
+                <div class="post-header">
+                    <div class="user-avatar">
+                        <div class="avatar">A2</div>
+                    </div>
+                    <div class="user-info">
+                        <h3>Anonymous Two</h3>
+                        <p>Ultimate Chocolate Chip Cookies... <a href="#">see more...</a></p>
+                    </div>
+                </div>
+
+                <div class="post-images">
+                    <img src="images/cookies.jpg" alt="Cookies Image">
+                    <img src="images/cookies2.jpg" alt="Cookies Image 2">
+                    <img src="images/cookies3.jpg" alt="Cookies Image 3">
+                </div>
+
                 <div class="post-actions">
-                    <button>Like</button>
-                    <button>Comment</button>
-                    <button>Share</button>
+                    <div class="likes-comments">
+                        <button class="action-btn like-btn"><i class="fas fa-thumbs-up"></i> 200k</button>
+                        <button class="action-btn unlike-btn"><i class="fas fa-thumbs-down"></i> 2k</button>
+                        <button class="action-btn comment-btn"><i class="fas fa-comment"></i> 35k</button>
+                    </div>
+                    <div class="other-actions">
+                        <button class="action-btn favorite-btn"><i class="fas fa-heart"></i> Add to Favorite</button>
+                        <button class="action-btn report-btn"><i class="fas fa-flag"></i> Report</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Example post 3 -->
+            <article class="post">
+                <div class="post-header">
+                    <div class="user-avatar">
+                        <div class="avatar">A3</div>
+                    </div>
+                    <div class="user-info">
+                        <h3>Anonymous Three</h3>
+                        <p>Homemade Sushi Rolls... <a href="#">see more...</a></p>
+                    </div>
+                </div>
+
+                <div class="post-images">
+                    <img src="images/sushi.jpg" alt="Sushi Image">
+                    <img src="images/sushi2.jpg" alt="Sushi Image 2">
+                    <img src="images/sushi3.jpg" alt="Sushi Image 3">
+                </div>
+
+                <div class="post-actions">
+                    <div class="likes-comments">
+                        <button class="action-btn like-btn"><i class="fas fa-thumbs-up"></i> 150k</button>
+                        <button class="action-btn unlike-btn"><i class="fas fa-thumbs-down"></i> 1.5k</button>
+                        <button class="action-btn comment-btn"><i class="fas fa-comment"></i> 12k</button>
+                    </div>
+                    <div class="other-actions">
+                        <button class="action-btn favorite-btn"><i class="fas fa-heart"></i> Add to Favorite</button>
+                        <button class="action-btn report-btn"><i class="fas fa-flag"></i> Report</button>
+                    </div>
                 </div>
             </article>
         </section>

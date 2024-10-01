@@ -1,0 +1,328 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+html, body {
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 220px; /* Increased logo size */
+}
+
+/* Navigation Buttons - Color changed to black */
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-buttons li button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none; /* No background */
+    border: none;
+    padding: 8px; /* Reduced padding */
+    font-size: 0.9rem; /* Smaller font size */
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    color: black; /* Changed text color to black */
+}
+
+.nav-buttons li button:hover {
+    color: #333; /* Darker hover color */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.nav-buttons li button i {
+    font-size: 1.3rem; /* Slightly smaller icon size */
+    margin-bottom: 3px;
+}
+
+.nav-buttons li button span {
+    font-size: 0.8rem; /* Slightly smaller label font */
+}
+
+/* Search bar - Long */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #007BFF;
+    border-radius: 30px;
+    padding: 8px 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Increased width for the search bar */
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0;
+    width: 100%;
+    color: #333;
+}
+
+.search-container .search-clear {
+    margin-left: 10px;
+    color: #007BFF;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Icons and Profile Section - Reduced gap between inbox, chat, and profile buttons */
+.nav-icons {
+    display: flex;
+    gap: 10px; /* Reduced gap to bring buttons closer */
+    list-style: none;
+}
+
+.nav-icons li button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none; /* No background */
+    border: none;
+    padding: 8px; /* Reduced padding */
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    color: black; /* Changed text color to black */
+}
+
+.nav-icons li button:hover {
+    color: #333; /* Darker hover color */
+    transform: scale(1.05);
+}
+
+.nav-icons li button i {
+    font-size: 1.3rem; /* Slightly smaller icon */
+    margin-bottom: 3px;
+}
+
+.nav-icons li button span {
+    font-size: 0.8rem;
+}
+
+/* Profile Icon (VC) */
+.profile-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #777;
+    font-size: 1rem;
+}
+
+/* Main Content - Placeholder for actual content */
+.post-feed {
+    min-height: 200px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    
+}
+
+/* Post Layout */
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Header: User Info */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-avatar {
+    margin-right: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ffcc00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.user-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.user-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.user-info a:hover {
+    text-decoration: underline;
+}
+
+/* Post Images */
+.post-images {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.post-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Post Actions with labels under the icons */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.likes-comments, .other-actions {
+    display: flex;
+    gap: 30px; /* Space between action buttons */
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column; /* Stack icon and label vertically */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    color: #555;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.action-btn i {
+    font-size: 1.5rem; /* Larger icon size */
+    margin-bottom: 5px; /* Space between icon and label */
+}
+
+.action-btn .action-label {
+    font-size: 0.9rem; /* Smaller label below icon */
+    margin-top: 3px; /* Space between label and icon */
+    color: #777; /* Lighter color for labels */
+}
+
+/* Hover effect */
+.action-btn:hover {
+    color: white;
+    background-color: #007BFF;
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Adjusted button hover colors for individual actions */
+.action-btn.like-btn:hover {
+    background-color: #28a745;
+}
+
+.action-btn.dislike-btn:hover {
+    background-color: #dc3545;
+}
+
+.action-btn.comment-btn:hover {
+    background-color: #17a2b8;
+}
+
+.action-btn.favorite-btn:hover {
+    background-color: #ffc107;
+}
+
+.action-btn.report-btn:hover {
+    background-color: #6c757d;
+}
+
+/* Adjusting the count styling */
+.action-btn .like-count, 
+.action-btn .dislike-count {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 2px;
+}
+/* Footer */
+footer {
+    margin-top: 65px;
+    text-align: center;
+    color: #777;
+    font-size: 1rem;
+}
